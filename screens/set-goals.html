@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js"></script>
+    <title>Workout</title>
+</head>
+
+<body class="min-h-svh flex flex-col justify-around font-Montserrat p-4 sm:hidden">
+    <div class="">
+        <header class="text-center font-semibold text-xl">
+            What are your goals ?
+        </header>
+        <hr class="border-none my-4" />
+        <form id="setGoals" class="space-y-4">
+            <div
+                class="flex justify-between items-center w-full py-4 px-6 font-semibold text-xs rounded-xl bg-[#F1F1F1]">
+                <label for="weightLoss">Weight Loss</label>
+                <input type="checkbox" name="weightLoss" id="weightLoss" class="w-fit setGoal">
+            </div>
+            <div
+                class="flex justify-between items-center w-full py-4 px-6 font-semibold text-xs rounded-xl bg-[#F1F1F1]">
+                <label for="weightLoss">Muscle Gain</label>
+                <input type="checkbox" name="weightLoss" id="weightLoss" class="w-fit setGoal">
+            </div>
+            <div
+                class="flex justify-between items-center w-full py-4 px-6 font-semibold text-xs rounded-xl bg-[#F1F1F1]">
+                <label for="weightLoss">Flexibility and Mobility</label>
+                <input type="checkbox" name="weightLoss" id="weightLoss" class="w-fit setGoal">
+            </div>
+            <div
+                class="flex justify-between items-center w-full py-4 px-6 font-semibold text-xs rounded-xl bg-[#F1F1F1]">
+                <label for="weightLoss">General Fitness</label>
+                <input type="checkbox" name="weightLoss" id="weightLoss" class="w-fit setGoal">
+            </div>
+            <div
+                class="flex justify-between items-center w-full py-4 px-6 font-semibold text-xs rounded-xl bg-[#F1F1F1]">
+                <label for="weightLoss">Event - specific training</label>
+                <input type="checkbox" name="weightLoss" id="weightLoss" class="w-fit setGoal ">
+            </div>
+            <div
+                class="flex justify-between items-center w-full py-4 px-6 font-semibold text-xs rounded-xl bg-[#F1F1F1]">
+                <label for="weightLoss">Mindfulness and Mental Health</label>
+                <input type="checkbox" name="weightLoss" id="weightLoss" class="w-fit setGoal">
+            </div>
+        </form>
+    </div>
+    <div>
+        <button id="setGoals" onclick="setGoals()"
+            class="font-medium text-xs py-4 bg-gradient-to-r to-[#7B91FF] from-[#95BEFF] w-full text-white rounded-xl">
+            Confirm
+        </button>
+       
+    </div>
+</body>
+
+</html>

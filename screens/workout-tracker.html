@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js"></script>
+    <title>Workout</title>
+</head>
+
+<body class="font-Montserrat sm:hidden p-4">
+    <div class="relative">
+
+        <header class="flex relative">
+            <button class="bg-zinc-100 rounded-md px-1">
+                <span class="material-symbols-outlined text-zinc-900 text-base">
+                    chevron_left
+                </span>
+            </button>
+            <h1 class="text-center absolute left-1/2 -translate-x-1/2 font-bold">Workout Tracker</h1>
+        </header>
+
+        <main class="">
+            <section class=" relative">
+                <div>
+                    <script>
+                        for(var i = 0; i < 5; i++){
+                            document.write("<hr class='my-5'>")
+                        }
+                    </script>
+                </div>
+                <div class="flex justify-between items-end absolute h-full top-0 w-full">
+                    <script>
+                        for (var i = 0; i < 60; i++) {
+                            if(i === 34 || i === 12 || i === 45 || i === 59){
+                                document.write(
+                                    "<div class='h-8 w-1 rounded-full bg-blue-500 mx-px '><div class='rounded-full h-4  w-1 bg-amber-500 relative'></div></div>"
+                            )
+                            }
+                            if( i === 30 || i === 38 || i === 26){
+                                document.write(
+                                    "<div class='h-12 w-1 rounded-full bg-blue-500 mx-px '><div class='rounded-full h-2 w-1 bg-amber-500 '></div></div>"
+                            )
+                            }
+                            if( i === 40 || i === 35 || i === 23 || i === 16){
+                                document.write(
+                                    "<div class='h-20 w-1 rounded-full bg-blue-500 mx-px '><div class='rounded-full h-2 w-1 bg-amber-500 '></div></div>"
+                            )
+                            }
+                            if( i === 11 || i === 16 || i === 23){
+                                document.write(
+                                    "<div class='h-10 w-1 rounded-full bg-blue-500 mx-px '><div class='rounded-full h-2 w-1 bg-amber-500 '></div></div>"
+                            )
+                            }
+                            if( i === 10 || i === 15 || i === 19){
+                                document.write(
+                                    "<div class='h-16 w-1 rounded-full bg-blue-500 mx-px '><div class='rounded-full h-2 w-1 bg-amber-500 '></div></div>"
+                            )
+                            }
+                            document.write(
+                                "<div class='h-px w-1 rounded-full bg-blue-500 mx-px '><div class='bottom-0 h-0 w-full bg-amber-500 absolute'></div></div>"
+                            )
+                        }
+                    </script>
+                    
+                </div>
+                <div class="text-black font-semibold py-1 flex justify-between w-full text-xs absolute top-full">
+                    <p>12:00</p>
+                    <p>06:00</p>
+                    <p>12:00</p>
+                    <p>06:00</p>
+                </div>
+            </section>
+
+            <hr class="border-none my-3">
+            <section class="">
+                <div
+                    class="flex items-center gap-4 px-4 py-2 rounded-xl bg-gradient-to-r from-[#819DFF]/[28%] to-transparent tracking-tight text-sm font-medium w-[90%]">
+                    <img src="../assets/warn-icon.svg" alt="">
+                    <small>You've burned fewer calories than yesterday. Time to get moving!</small>
+                </div>
+            </section>
+
+            <hr class="border-none my-3">
+
+            <section class="space-y-4">
+                <div class="flex justify-between">
+                    <h1 class="text-sm font-semibold">Upcoming Workout</h1>
+                    <small class="text-xs text-[#7f7f7f] font-Quicksand">See More</small>
+                </div>
+                <div class="w-full shadow-md flex justify-between items-center px-4 py-3 rounded-2xl">
+                    <div class="flex items-center gap-4">
+                        <img src="../assets//full_body_workout.png" class="w-[50px] h-[50px]" alt="">
+                        <div class="">
+                            <p class="text-xs font-medium">Full Body Workout</p>
+                            <small class="text-xs tracking-tight text-[#7f7f7f]">Today 3pm</small>
+                        </div>
+                    </div>
+                    <input class="switch w-fit" type="checkbox" checked="true">
+                </div>
+                <div class="w-full shadow-md px-4 py-3 rounded-2xl flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <img src="../assets//upper_body_workout.png" class="w-[50px] h-[50px]" alt="">
+                        <div class="">
+                            <p class="text-xs font-medium">Upper Body Workout</p>
+                            <small class="text-xs tracking-tight text-[#7f7f7f]">4 Feb 3:30pm</small>
+                        </div>
+                    </div>
+                    <input class="switch w-fit" type="checkbox" checked="true">
+                </div>
+            </section>
+
+            <hr class="border-none my-3">
+
+            <section class="space-y-4 ">
+                <h1 class="text-sm font-semibold">What Do You Want To Train</h1>
+                <div
+                    class="bg-[#8CB1FF]/[60%] text-xs font-semibold tracking-tight rounded-xl p-4 flex items-start justify-between">
+                    <div class="space-y-2">
+                        <p class="">Full Body Workout</p>
+                        <p>Arms</p>
+                        <p>Chest</p>
+                    </div>
+                    <div>
+                        <img src="../assets/image.png" class="w-[100px] h-[100px]" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="z-20 px-6 items-center fixed bottom-0 h-20 bg-white w-full left-0 flex justify-between">
+                <a href="">
+                    <img src="../assets/home-icon.svg" alt="" srcset="">
+                </a>
+                <a href="">
+                    <img src="../assets/progress-icon.svg" alt="" srcset="">
+                </a>
+                <div class="">
+                    <div
+                        class="bg-gradient-to-r from-[#DEE5FF] to-[#809AFF] drop-shadow-lg absolute p-4 rounded-full top-0 left-1/2 -translate-x-1/2">
+                        <img src="../assets//search-icon.svg" alt="" srcset="">
+                    </div>
+                </div>
+                <a href="">
+                    <img src="../assets/camera-icon.svg" alt="" srcset="">
+                </a>
+                <a href="">
+                    <img src="../assets/user-icon.svg" alt="" srcset="">
+                </a>
+            </div>
+    </div>
+    </footer>
+</body>
+
+</html>
